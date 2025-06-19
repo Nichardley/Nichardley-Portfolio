@@ -3,7 +3,6 @@ function scrollToSection(id) {
     section.scrollIntoView({ behavior: "smooth" });
 }
 
-// Gestion de l'envoi du formulaire
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault(); // Empêche le rechargement de la page
 
@@ -13,10 +12,13 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   const sujet = document.getElementById('sujet').value;
   const message = document.getElementById('message').value;
 
-  // Pour l'instant, on affiche juste un message de confirmation
+  // Affiche une alerte
+  alert("Message envoyé avec succès !");
+
+  // Message de confirmation dans la page (facultatif)
   const confirmation = document.getElementById('confirmationMessage');
   confirmation.textContent = `Merci ${prenom}, votre message a bien été envoyé !`;
 
-  // Optionnel : réinitialiser le formulaire
+  // Réinitialiser le formulaire
   document.getElementById('contactForm').reset();
 });
