@@ -1,0 +1,208 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #101010;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00d1b2;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5em;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+/* SECTION HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 4em 1em;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.hero .prenom {
+  color: #00d1b2;
+}
+
+.hero button {
+  background-color: #00d1b2;
+  color: white;
+  border: none;
+  padding: 0.75em 2em;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.hero img {
+  max-width: 400px;
+  height: auto;
+}
+
+/* SECTIONS GÉNÉRALES */
+section {
+  padding: 4em 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  color: #00d1b2;
+  margin-bottom: 2em;
+}
+
+/* À PROPOS */
+#apropos .contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#apropos img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00d1b2;
+  margin-top: 1em;
+}
+
+#apropos a {
+  display: inline-block;
+  margin-top: 1.5em;
+  background-color: #00d1b2;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* PROJETS */
+.cartes-projets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.carte {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 250px;
+  text-align: center;
+}
+
+.carte button {
+  margin-top: 1em;
+  background-color: #00d1b2;
+  color: white;
+  border: none;
+  padding: 0.5em 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* COMPÉTENCES */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.skills div {
+  width: 300px;
+}
+
+.skills .bar {
+  background: #ccc;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.skills .niveau {
+  background: #00d1b2;
+  height: 100%;
+}
+
+/* CONTACT */
+#contact {
+  background-color: #101010;
+  color: white;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 2em auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#contact button {
+  background-color: #00d1b2;
+  color: white;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* FOOTER */
+footer {
+  background: #101010;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  font-size: 0.9em;
+}
